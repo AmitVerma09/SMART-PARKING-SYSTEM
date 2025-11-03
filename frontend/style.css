@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+/* Header Bar */
+.header {
+  background-color: #1e6cff;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  margin: 0;
+  transform: translateX(-50%);
+}
+
+.material-symbols-outlined {
+  font-size: 40px;
+  cursor: pointer;
+  color: #fff;
+  background: rgba(40, 4, 138, 0.795);
+  border-radius: 50%;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.header .material-symbols-outlined:hover {
+  background: rgba(92, 83, 83, 0.45);
+}
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+.floor-select select {
+  border: none;
+  border-bottom: 2px solid #1e6cff;
+  padding: 5px;
+  font-size: 20px;
+  color: #1e6cff;
+}
+
+#fl {
+  font-size: 25px;
+}
+
+.entry-label,
+.exit-label {
+  margin: 15px 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.parking-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 30px;
+  justify-items: center;
+  margin-bottom: 15px;
+}
+
+.slot {
+  border: 2px dashed #1e6cff;
+  border-radius: 10px;
+  width: 250px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slot-id {
+  background-color: #b4a5a5;
+  border: 1px solid #0b60e9;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.book-btn {
+  background-color: #1e6cff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-btn.booked {
+  background-color: #9ec2ff;
+  color: #333;
+  cursor: not-allowed;
+}
+.car-img {
+  width: 70px;
+  display: block;
+  margin: 5px auto;
+}
+.booked {
+  position: relative;
+}
+.price {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}

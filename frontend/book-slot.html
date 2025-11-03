@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Parking</title>
+  <link rel="stylesheet" href="book-slot.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+  <!-- Header Bar -->
+  <header class="header">
+    <span class="material-symbols-outlined">arrow_back</span>
+    <h1>BOOK SLOT</h1>
+  </header>
+
+  <!-- Car Image -->
+  <div class="car-section">
+    <img src="../images/car.png" alt="Car" class="car-img">
+  </div>
+  <hr>
+  <!-- Booking Section -->
+  <section class="booking-section">
+    <h2>Book Now <span>😊</span></h2>
+
+    <label for="name">Enter your name</label>
+    <div class="input-box">
+      <span>👨</span>
+      <input type="text" id="name" value="" />
+    </div>
+    <label for="name">Enter mobile no</label>
+    <div class="input-box">
+      <span>📱</span>
+      <input type="number" id="name" value="" />
+    </div>
+    <label for="name">Enter vehical no</label>
+    <div class="input-box">
+      <span>🚴</span>
+      <input type="text" id="name" value="" />
+    </div>
+
+    <label for="timeRange">Choose Slot Time (in Minutes)</label>
+    <input type="range" id="timeRange" min="10" max="60" step="5" value="10">
+    <div class="range-labels">
+      <span>10</span><span>15</span><span>20</span><span>25</span><span>30</span><span>40</span><span>50</span><span>60</span>
+    </div>
+
+    <p>Your Slot Name</p>
+    <div class="slot-box" id="slotBox"></div>
+
+
+    <p>Amount to Be Pay</p>
+    <div class="price">₹20</div>
+
+    <button class="pay-btn">PAY NOW</button>
+  </section>
+  <script src="book-slot.js"></script>
+  <script src="profile.js"></script>
+</body>
+
+</html>

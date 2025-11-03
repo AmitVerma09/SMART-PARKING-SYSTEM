@@ -1,0 +1,47 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+.header {
+  background: #1976D2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 105px;
+  margin-bottom: 5px;
+}
+
+.header h1 {
+  font-size: 35px;
+  text-align: center;
+  margin: 0;
+}
+
+.header a {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+}
+
+.material-symbols-outlined {
+  font-size: 40px;
+  cursor: pointer;
+  color: #fff;
+  background: rgba(40, 4, 138, 0.795);
+  border-radius: 50%;
+  padding: 12px;
+  transition: 0.3s;
+}
+
+.header .material-symbols-outlined:hover {
+  background: rgba(92, 83, 83, 0.45);
+}
