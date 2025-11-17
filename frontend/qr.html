@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking</title>
+    <link rel="stylesheet" href="qr.css">
+
+    <!-- QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>Scan this QR Code at Entry and Exit Points</h2>
+    </div>
+
+    <div id="qr-box">
+        <h3>Your Validation is Your QR</h3>
+
+        <div id="qrcode"></div>
+
+        <h1 id="pass-number">Pass No: Loading...</h1>
+
+        <p class="thanks">Thank You for using Smart Parking System</p>
+        <button class="transfer-btn">Transfer Pass</button>
+    </div>
+
+    <div class="payment">
+        <h3>Payment Details</h3>
+
+        <div class="pay-row">
+            <span class="label">Slot No:</span>
+            <span id="slot-show"></span>
+        </div>
+
+        <div class="pay-row">
+            <span class="label">Amount:</span>
+            <span id="amount-show"></span>
+        </div>
+    </div>
+
+
+    <div class="last">
+        <img src="../images/scan.png" alt="Scan Image">
+        <div class="para">
+            Please let the scanners at the smart gates scan your pass QR.
+        </div>
+    </div>
+
+    <script src="qr.js"></script>
+</body>
+
+</html>

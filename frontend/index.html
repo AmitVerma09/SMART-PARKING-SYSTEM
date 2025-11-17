@@ -2,55 +2,142 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Parking</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking</title>
 
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- Header -->
-  <div class="header">
-    <span class="material-symbols-outlined">arrow_back</span>
-    <h1>SMART PARKING</h1>
-    <a href="profile.html">
-      <span class="material-symbols-outlined">person</span>
-    </a>
-  </div>
-  <!-- Main Content -->
-  <div class="container">
-    <h2>Parking Slots</h2>
-
-    <div class="floor-select">
-      <label id="fl" for="floor">Select Floor:</label>
-      <select id="floor">
-        <option>1 Floor</option>
-        <option>2 Floor</option>
-        <option>3 Floor</option>
-      </select>
+    <div class="header">
+        <div class="logo">
+            <img src="../images/parking logo.png" alt="Smart Parking Logo">
+        </div>
+        <h1>Smart Parking</h1>
+        <nav class="container">
+            <ul>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="slot.html">Slot Availability</a></li>
+                <li><a href="book-slot.html">Book Slot</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="QR.html">QR Code</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <p class="entry-label">ENTRY ⬇️</p>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>पार्किंग की समस्या? अब और नहीं।</h1>
+            <p>Jabalpur Smart City में अपना परफेक्ट पार्किंग स्लॉट मिनटों में खोजें, बुक करें और सुरक्षित करें।</p>
+            <a href="slot.html" target="_blank" class="cta-button">➡️ अभी स्लॉट बुक करें</a>
+        </div>
+    </section>
 
-    <div class="parking-grid">
-      <div class="slot"><span class="slot-id">A-1</span><button class="book-btn">BOOK</button></div>
-      <div class="slot"><span class="slot-id">A-2</span><button class="book-btn">BOOK</button></div>
-      <div class="slot"><span class="slot-id">A-3</span><button class="book-btn">BOOK</button></div>
-      <div class="slot"><span class="slot-id">A-4</span><button class="book-btn">BOOK</button></div>
-      <div class="slot"><span class="slot-id">A-5</span><button class="book-btn">BOOK</button></div>
-      <div class="slot"><span class="slot-id">A-6</span><button class="book-btn">BOOK</button></div>
-      <div class="slot"><span class="slot-id">A-7</span><button class="book-btn">BOOK</button></div>
-      <div class="slot"><span class="slot-id">A-8</span><button class="book-btn">BOOK</button></div>
-    </div>
+    <section class="card-container">
+        <div class="card">
+            <h1>BOOKINGS <span> OPEN </span></h1>
+            <img src="../images/cards2.jpg" alt="Bookings Open Image">
+        </div>
+        <div class="card">
+            <h1>EASY <span>PARKING</span></h1>
+            <img src="../images/cards3.png" alt="Easy Parking Image">
+        </div>
+        <div class="card">
+            <h1>SEARCH <span>LOCATION</span></h1>
+            <img src="../images/cards4.jpg" alt="Search Location Image">
+        </div>
+        <div class="card">
+            <h1>PARK YOUR <span>CARS</span> WITH ATMOST <span>SECURITY</span></h1>
+            <img src="../images/cards.jpg" alt="Secure Parking Image">
+        </div>
+    </section>
 
-    <p class="exit-label">EXIT ⬇️</p>
-  </div>
+    <section class="features-section">
+        <h2>हमारे फायदे और विशेषताएं</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-map-marker-alt feature-icon"></i>
+                <h3>रियल-टाइम उपलब्धता</h3>
+                <p>तुरंत जानें कि कौन सा स्लॉट खाली है, समय और ईंधन बचाएं।</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-mobile-alt feature-icon"></i>
+                <h3>आसान प्री-बुकिंग</h3>
+                <p>कुछ ही टैप में अपना स्लॉट बुक करें और बिना झंझट के पार्क करें।</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-lock feature-icon"></i>
+                <h3>पूरी सुरक्षा</h3>
+                <p>CCTV सर्विलांस और सुरक्षित चेक-इन/आउट सिस्टम।</p>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
-  <script src="profile.js"></script>
+    <h2>वाहन के प्रकार जिनके लिए पार्किंग उपलब्ध है</h2>
+    <section class="vehical-type">
+        <img src="../images/bike.png" alt="Bike Parking Icon">
+        <img src="../images/car1.png" alt="Car Parking Icon">
+        <img src="../images/auto.png" alt="Auto Rickshaw Parking Icon">
+    </section>
+
+    <h2>सुझाए गए पार्किंग स्थल</h2>
+    <section class="parking-location">
+        <div class="location-item">
+            <img src="../images/bike-parking.jpg" alt="Bike Parking Location">
+            <p>Bike Parking<br>Jabalpur, Smart City</p>
+        </div>
+        <div class="location-item">
+            <img src="../images/car-parking.jpg" alt="Car Parking Location">
+            <p>Car Parking<br>Jabalpur, Smart City</p>
+        </div>
+        <div class="location-item">
+            <img src="../images/railway-parking.jpeg" alt="Railway Parking Location">
+            <p>Railway Parking<br>Jabalpur, Smart City</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>हमारे ग्राहक क्या कहते हैं</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p>"Smart Parking ने पार्किंग को इतना आसान बना दिया है। समय पर स्लॉट मिल जाता है और बुकिंग भी फ़ास्ट है!"
+                </p>
+                <h4>- अंजली सिंह</h4>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"सुरक्षित और किफायती। शहर में कहीं भी पार्किंग खोजने की टेंशन खत्म। शानदार सर्विस!"</p>
+                <h4>- विक्रम पटेल</h4>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <h4>त्वरित लिंक्स</h4>
+                <ul>
+                    <li><a href="map.html">मैप</a></li>
+                    <li><a href="book-slot.html">बुकिंग</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">नियम और शर्तें</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h4>संपर्क करें</h4>
+                <p><i class="fas fa-envelope"></i> amit917992@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> +91-9179926262</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Smart Parking Solutions. सभी अधिकार सुरक्षित।</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

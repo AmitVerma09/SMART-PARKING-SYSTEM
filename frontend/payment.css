@@ -1,0 +1,127 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%);
+    letter-spacing: 1px;
+}
+
+.material-symbols-outlined {
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.header .material-symbols-outlined:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.payment-box {
+    background: #ffffff;
+    padding: 35px;
+    margin: 50px auto;
+    border-radius: 18px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.12);
+    width: 600px;
+    height: 650px;
+    text-align: center;
+}
+
+h2 {
+    color: #1a237e;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    padding: 10px;
+    margin: 12px 0;
+    border: 1px solid #b0bec5;
+    border-radius: 10px;
+    background: #f0f2f5;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #1a73e8;
+    box-shadow: 0px 0px 5px rgba(26, 115, 232, 0.4);
+    background: #ffffff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    font-size: 26px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #1a73e8, #1565c0);
+    border: none;
+    color: white;
+    margin: 18px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0d47a1, #004ba0);
+}
+
+.loader {
+    border: 4px solid #e3e3e3;
+    border-top: 4px solid #1a73e8;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.success {
+    color: #0ea900;
+    font-weight: bold;
+    font-size: 32px;
+    text-shadow: 0 2px 10px rgba(0, 255, 0, 0.3);
+    margin-top: 20px;
+    display: none;
+}

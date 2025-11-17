@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Parking</title>
+  <link rel="stylesheet" href="slot.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <a href="map.html">
+      <span class="material-symbols-outlined">arrow_back</span>
+    </a>
+    <h1>SMART PARKING</h1>
+    <a href="profile.html">
+      <span class="material-symbols-outlined">person</span>
+    </a>
+  </div>
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Parking Slots</h2>
+
+    <div class="floor-select">
+      <label id="fl" for="floor">Select Floor:</label>
+      <select id="floor">
+        <option>1 Ground</option>
+        <option>2 Ground</option>
+        <option>3 Ground</option>
+      </select>
+    </div>
+
+    <p class="entry-label">ENTRY ⬇️</p>
+
+    <div class="parking-grid">
+      <div class="slot"><span class="slot-id">A-1</span><button class="book-btn">BOOK</button></div>
+      <div class="slot"><span class="slot-id">A-2</span><button class="book-btn">BOOK</button></div>
+      <div class="slot"><span class="slot-id">A-3</span><button class="book-btn">BOOK</button></div>
+      <div class="slot"><span class="slot-id">A-4</span><button class="book-btn">BOOK</button></div>
+      <div class="slot"><span class="slot-id">A-5</span><button class="book-btn">BOOK</button></div>
+      <div class="slot"><span class="slot-id">A-6</span><button class="book-btn">BOOK</button></div>
+      <div class="slot"><span class="slot-id">A-7</span><button class="book-btn">BOOK</button></div>
+      <div class="slot"><span class="slot-id">A-8</span><button class="book-btn">BOOK</button></div>
+      <div class="slot"><span class="slot-id">A-9</span><button class="book-btn">BOOK</button></div>
+    </div>
+
+    <p class="exit-label">EXIT ⬇️</p>
+  </div>
+
+  <script src="slot.js"></script>
+</body>
+
+</html>

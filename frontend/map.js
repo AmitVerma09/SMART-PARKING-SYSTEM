@@ -18,21 +18,21 @@ var redIcon = new L.Icon({
 
 var marker1 = L.marker([23.170447780922313, 79.92694588212515], { icon: redIcon }).addTo(map).bindPopup("Parking A - Gol bazar").bindTooltip("Parking A - Gol bazar", { permanent: false, direction: "top" })
   .on('click', function () {
-    window.location.href = "index.html";
+    window.location.href = "slot.html";
   });
 var marker2 = L.marker([23.201845256911238, 79.91281873785051], { icon: redIcon }).addTo(map).bindPopup("Parking B - shir ram college").bindTooltip("Parking B - shir ram college", { permanent: false, direction: "top" })
   .on('click', function () {
-    window.location.href = "index.html";
+    window.location.href = "slot.html";
   });
 var marker3 = L.marker([23.197773753167134, 79.90707279367183], { icon: redIcon }).addTo(map).bindPopup("Parking C - chungi naka").bindTooltip("Parking C - chungi naka", { permanent: false, direction: "top" })
   .on('click', function () {
-    window.location.href = "index.html";
+    window.location.href = "slot.html";
   });
 var marker4 = L.marker([23.16635430425248, 79.95027314108285], { icon: redIcon }).addTo(map).bindPopup("Parking D - Railway station").bindTooltip("Parking D - Railway station", { permanent: false, direction: "top" })
   .on('click', function () {
-    window.location.href = "index.html";
+    window.location.href = "slot.html";
   });
 var marker5 = L.marker([23.193025558443786, 79.92578673017887], { icon: redIcon }).addTo(map).bindPopup("Parking E - damoh naka").bindTooltip("Parking E - damoh naka", { permanent: false, direction: "top" })
   .on('click', function () {
-    window.location.href = "index.html";
+    window.location.href = "slot.html";
   });

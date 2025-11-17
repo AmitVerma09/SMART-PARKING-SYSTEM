@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (backArrow) {
     backArrow.addEventListener("click", () => {
-      
+
       // Option 1: Go to previous page
 
       window.history.back();

@@ -1,5 +1,7 @@
 body {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 #map {
@@ -8,40 +10,37 @@ body {
 }
 
 .header {
-  background: #1976D2;
-  color: white;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 20px 30px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   position: relative;
-  height: 105px;
-  margin-bottom: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
-  font-size: 35px;
-  text-align: center;
-  margin: 0;
-}
-
-.header a {
+  font-size: 32px;
+  font-weight: 700;
   position: absolute;
-  right: 25px;
-  top: 50%;
-  transform: translateY(-50%);
-  text-decoration: none;
+  left: 50%;
+  margin: 0;
+  transform: translateX(-50%);
+  letter-spacing: 1px;
 }
 
 .material-symbols-outlined {
-  font-size: 40px;
+  font-size: 28px;
   cursor: pointer;
   color: #fff;
-  background: rgba(40, 4, 138, 0.795);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
-  padding: 12px;
+  padding: 10px;
   transition: 0.3s;
+  z-index: 10;
 }
 
 .header .material-symbols-outlined:hover {
-  background: rgba(92, 83, 83, 0.45);
+  background: rgba(255, 255, 255, 0.35);
 }

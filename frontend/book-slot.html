@@ -12,7 +12,9 @@
 <body>
   <!-- Header Bar -->
   <header class="header">
-    <span class="material-symbols-outlined">arrow_back</span>
+    <a href="slot.html">
+      <span class="material-symbols-outlined">arrow_back</span>
+    </a>
     <h1>BOOK SLOT</h1>
   </header>
 
@@ -40,6 +42,16 @@
       <span>🚴</span>
       <input type="text" id="name" value="" />
     </div>
+    <label>Which type of vehicle you have?</label>
+    <div class="input-box">
+      <select id="vehicleType">
+        <option value="2-Wheeler">select</option>
+        <option value="2-Wheeler">2 Wheeler</option>
+        <option value="3-Wheeler">3 Wheeler</option>
+        <option value="4-Wheeler">4 Wheeler</option>
+        <option value="Heavy">More than 4 Wheeler</option>
+      </select>
+    </div>
 
     <label for="timeRange">Choose Slot Time (in Minutes)</label>
     <input type="range" id="timeRange" min="10" max="60" step="5" value="10">
@@ -57,7 +69,6 @@
     <button class="pay-btn">PAY NOW</button>
   </section>
   <script src="book-slot.js"></script>
-  <script src="profile.js"></script>
 </body>
 
 </html>

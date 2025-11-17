@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <!-- Top Header -->
+    <div class="header">
+        <a href="book-slot.html">
+            <span class="material-symbols-outlined">arrow_back</span>
+        </a>
+        <h1>SMART PARKING</h1>
+    </div>
+    <div class="payment-box">
+        <h2></h2>
+        <input type="text" id="cardNumber" placeholder="Card Number (e.g. 1234 5678 90)">
+        <input type="text" id="name" placeholder="Cardholder Name">
+        <input type="text" id="expiry" placeholder="MM/YY">
+        <input type="password" id="cvv" placeholder="CVV">
+        <input type="text" id="upi" placeholder="UPI">
+        <button onclick="processPayment()">Pay Now</button>
+        <div class="loader" id="loader"></div>
+        <p class="success" id="successMsg"> Payment Successful!</p>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+
+</html>

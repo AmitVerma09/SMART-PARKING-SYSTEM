@@ -1,129 +1,356 @@
-* {
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+सामान्य और रीसेट स्टाइलिंग * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-  margin: 0;
-  background: #fff;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Header Bar */
-.header {
-  background-color: #1e6cff;
-  color: #fff;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.header h1 {
-  font-size: 40px;
-  position: absolute;
-  left: 50%;
-  margin: 0;
-  transform: translateX(-50%);
-}
-
-.material-symbols-outlined {
-  font-size: 40px;
-  cursor: pointer;
-  color: #fff;
-  background: rgba(40, 4, 138, 0.795);
-  border-radius: 50%;
-  padding: 15px;
-  transition: 0.3s;
-}
-
-.header .material-symbols-outlined:hover {
-  background: rgba(92, 83, 83, 0.45);
-}
-.container {
-  text-align: center;
-  margin-top: 20px;
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin: 20px 0;
+    color: #004d40;
 }
 
 h2 {
-  margin-bottom: 10px;
-  font-size: 40px;
+    font-size: 2em;
+    padding: 10px 0;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 30px;
 }
 
-.floor-select select {
-  border: none;
-  border-bottom: 2px solid #1e6cff;
-  padding: 5px;
-  font-size: 20px;
-  color: #1e6cff;
+/* Header Section */
+.header {
+    background-color: #006064;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-#fl {
-  font-size: 25px;
+.logo img {
+    height: 50px;
+    border-radius: 5px;
 }
 
-.entry-label,
-.exit-label {
-  margin: 15px 0;
-  font-weight: bold;
-  font-size: 30px;
+.header h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.8em;
 }
 
-.parking-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px 30px;
-  justify-items: center;
-  margin-bottom: 15px;
+.container ul {
+    list-style: none;
+    display: flex;
 }
 
-.slot {
-  border: 2px dashed #1e6cff;
-  border-radius: 10px;
-  width: 250px;
-  height: 170px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.container ul li {
+    margin-left: 25px;
 }
 
-.slot-id {
-  background-color: #b4a5a5;
-  border: 1px solid #0b60e9;
-  border-radius: 20px;
-  padding: 8px 20px;
-  font-size: 20px;
-  margin-bottom: 15px;
+.container ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 0;
+    transition: color 0.3s, border-bottom 0.3s;
 }
 
-.book-btn {
-  background-color: #1e6cff;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 30px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: 0.3s;
+.container ul li a:hover {
+    color: #4db6ac;
+    border-bottom: 2px solid #4db6ac;
 }
 
-.book-btn.booked {
-  background-color: #9ec2ff;
-  color: #333;
-  cursor: not-allowed;
+/* 1. Hero Section Styling */
+.hero-section {
+    background: linear-gradient(rgba(0, 77, 64, 0.7), rgba(0, 77, 64, 0.7)), url('../images/hero-bg.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 40px;
 }
-.car-img {
-  width: 70px;
-  display: block;
-  margin: 5px auto;
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    color: white;
 }
-.booked {
-  position: relative;
+
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.price {
-  display: block;
-  text-align: center;
-  font-weight: bold;
-  color: #000;
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff9800;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #f57c00;
+    transform: translateY(-2px);
+}
+
+/* Cards Section Styling */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 5%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    margin: 10px 0;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h1 {
+    font-size: 1.1em;
+    padding: 15px 10px;
+    background-color: #e0f2f1;
+    color: #004d40;
+}
+
+.card h1 span {
+    color: #ff9800;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-fit: contain;
+    display: block;
+}
+
+/* 2. Features Section Styling */
+.features-section {
+    padding: 40px 5%;
+    background-color: white;
+    margin-top: 40px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.feature-item {
+    text-align: center;
+    width: 30%;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.3s;
+}
+
+.feature-item:hover {
+    background-color: #f0f5f9;
+}
+
+.feature-icon {
+    font-size: 3em;
+    color: #006064;
+    margin-bottom: 10px;
+}
+
+.feature-item h3 {
+    color: #004d40;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Vehicle Type Section */
+.vehical-type {
+    text-align: center;
+    padding: 20px 5%;
+    margin-bottom: 40px;
+}
+
+.vehical-type img {
+    height: 100px;
+    margin: 0 30px;
+    border-radius: 8px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.15));
+    transition: transform 0.3s;
+}
+
+.vehical-type img:hover {
+    transform: scale(1.1);
+}
+
+/* Parking Location Section */
+.parking-location {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 5%;
+    margin-bottom: 40px;
+}
+
+.location-item {
+    width: 30%;
+    min-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 15px 0;
+    transition: box-shadow 0.3s;
+}
+
+.location-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.location-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.location-item p {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #004d40;
+}
+
+/* 3. Testimonials Section Styling */
+.testimonials {
+    padding: 40px 5%;
+    background-color: #e0f7fa;
+    margin-top: 40px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    text-align: center;
+    position: relative;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.testimonial-card h4 {
+    color: #006064;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.rating {
+    color: gold;
+    font-size: 1.2em;
+}
+
+/* 4. Footer Styling */
+footer {
+    background-color: #004d40;
+    color: white;
+    padding: 40px 5% 10px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4db6ac;
+}
+
+.footer-links,
+.contact-info {
+    width: 45%;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    color: #ff9800;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 2.2;
+    pointer-events: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #4db6ac;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #ff9800;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 0.9em;
+    color: #ccc;
 }

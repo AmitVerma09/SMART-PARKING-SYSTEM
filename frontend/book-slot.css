@@ -6,36 +6,45 @@
 body {
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
+  background: #f0f2f5;
 }
 
 /* Header */
+
 .header {
-  background: #1976D2;
-  color: white;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 20px 30px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   position: relative;
-  height: 105px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
-  font-size: 35px;
-  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
   margin: 0;
+  transform: translateX(-50%);
+  letter-spacing: 1px;
 }
 
 .material-symbols-outlined {
-  position: absolute;
-  left: 20px;
   font-size: 28px;
-  color: white;
-  background: rgba(40, 4, 138, 0.795);
-  border-radius: 50%;
-  padding: 15px;
   cursor: pointer;
-  transition: background 0.3s;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  padding: 10px;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.header .material-symbols-outlined:hover {
+  background: rgba(255, 255, 255, 0.35);
 }
 
 /* Car Image */
@@ -48,37 +57,69 @@ body {
 /* Booking Section */
 .booking-section {
   background: white;
-  padding: 20px;
-  margin: 0 15px 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  margin: 25px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
 }
 
 .booking-section h2 {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   font-size: 30px;
-  color: #333;
+  color: #007BFF;
+  font-weight: 600;
+}
+
+.booking-section h2 span {
+  margin-left: 10px;
+  font-size: 26px;
 }
 
 .booking-section label {
   display: block;
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 5px;
   font-size: 20px;
   color: #555;
+  font-weight: 500;
 }
 
 .input-box {
   display: flex;
   align-items: center;
-  background: #E9EEF4;
+  background: #f0f2f5;
   border-radius: 10px;
-  padding: 12px 16px;
-  margin-top: 6px;
+  padding: 12px 15px;
+  margin-top: 5px;
+  border: 1px solid #b0bec5;
+  transition: 0.3s;
+}
+
+.input-box:focus-within {
+  background: #ffffff;
+  border-color: #1a73e8;
+  box-shadow: 0px 0px 7px rgba(26, 115, 232, 0.4);
+}
+
+/* Inside input effect */
+.input-box input,
+.input-box select {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
 }
 
 .input-box .icon {
   margin-right: 10px;
   font-size: 18px;
   color: #555;
+}
+
+.input-box span {
+  margin-right: 12px;
+  font-size: 25px;
 }
 
 .input-box input {
@@ -122,7 +163,7 @@ p {
 .price {
   font-size: 30px;
   font-weight: 600;
-  color: #1976D2;
+  color: #DC3545;
   margin-bottom: 20px;
 }
 
