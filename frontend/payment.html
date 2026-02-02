@@ -4,29 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Parking</title>
+    <title>Smart Parking - Payment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="payment.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
-    <!-- Top Header -->
     <div class="header">
-        <a href="book-slot.html">
+        <a href="book-slot.html" class="back-link">
             <span class="material-symbols-outlined">arrow_back</span>
         </a>
         <h1>SMART PARKING</h1>
     </div>
+
     <div class="payment-box">
-        <h2></h2>
-        <input type="text" id="cardNumber" placeholder="Card Number (e.g. 1234 5678 90)">
-        <input type="text" id="name" placeholder="Cardholder Name">
-        <input type="text" id="expiry" placeholder="MM/YY">
-        <input type="password" id="cvv" placeholder="CVV">
-        <input type="text" id="upi" placeholder="UPI">
-        <button onclick="processPayment()">Pay Now</button>
+        <h2>Complete Your Payment</h2>
+
+        <div class="payment-tabs">
+            <button class="tab-button active" onclick="showPayment('card')">
+                <span class="material-symbols-outlined">credit_card</span> Card Payment
+            </button>
+            <button class="tab-button" onclick="showPayment('upi')">
+                <span class="material-symbols-outlined">qr_code_2</span> UPI / Net Banking
+            </button>
+        </div>
+
+        <div id="card-section" class="payment-section active-section">
+            <input type="text" id="cardNumber" placeholder="Card Number" maxlength="19">
+            <input type="text" id="name" placeholder="Cardholder Name">
+            <div class="card-details-row">
+                <input type="text" id="expiry" placeholder="MM/YY" maxlength="5">
+                <input type="password" id="cvv" placeholder="CVV" maxlength="3">
+            </div>
+            <p class="card-note">Your details are secured and encrypted.</p>
+        </div>
+
+        <div id="upi-section" class="payment-section">
+            <input type="text" id="upi" placeholder="Enter UPI ID (e.g., username@bankname)">
+            <p class="upi-note">You will receive a notification on your UPI app for payment authorization.</p>
+        </div>
+
+        <button class="pay-button" onclick="processPayment()">
+            Pay Now
+        </button>
+
         <div class="loader" id="loader"></div>
-        <p class="success" id="successMsg"> Payment Successful!</p>
+        <p class="success" id="successMsg">
+            <span class="material-symbols-outlined check-icon">check_circle</span> Payment Successful!
+        </p>
     </div>
 
     <script src="payment.js"></script>
